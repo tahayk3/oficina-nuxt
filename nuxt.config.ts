@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-    modules: [
+  nitro: {
+    preset: 'netlify'
+  },
+  ssr: true,  // asegúrate que esté habilitado para SSR (SEO)
+  modules: [
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/ui'
