@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/.netlify/functions/api-sitemap-xml"
+  status = 200
