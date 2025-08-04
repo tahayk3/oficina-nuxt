@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/sitemap.xml"
-  to = "/.netlify/functions/api-sitemap-xml"
+  to = "/api/sitemap.xml"
   status = 200
   force = true
