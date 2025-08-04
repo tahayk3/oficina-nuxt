@@ -1,13 +1,12 @@
-<script setup>
+<script setup lang="ts">
 useHead({
-  title: 'Inicio - Oficina de Abogados',
+  title: 'Oficina Karen Mazariegos Quetzaltenango - Inicio',
   meta: [
-    { name: 'description', content: 'Bienvenido a la página principal de la oficina de la abogada Karen Mazariegos' }
+    { name: 'description', content: 'Oficina de abogados en Quetzaltenango, especializada en derecho familiar y civil.' },
+    { property: 'og:title', content: 'Oficina Karen Mazariegos Quetzaltenango' },
+    { property: 'og:description', content: 'Oficina de abogados en Quetzaltenango, especializada en derecho familiar y civil.' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
   ]
 })
 </script>
-
-<template>
-  <h1>Bienvenido a la página oficial de la oficina de la abogada Karen Mazariegos</h1>
-  <p>Esta es la página de inicio.</p>
-</template>
