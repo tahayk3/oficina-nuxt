@@ -1,3 +1,7 @@
+[build]
+  publish = ".output/public"
+  command = "nuxt build"
+
 [[redirects]]
   from = "/sitemap.xml"
   to = "/api/sitemap.xml"
