@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
-Sitemap: https://oficina-karen-mazariegos.netlify.app/api/sitemap.xml
+Sitemap: https://oficina-karen-mazariegos.netlify.app/sitemap.xml
 
