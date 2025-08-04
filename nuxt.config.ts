@@ -11,4 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/ui'
   ],
+    typescript: {
+    strict: true,
+    shim: false  // para evitar problemas con imports automáticos en TS
+  }
 })
