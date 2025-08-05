@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { useHead } from 'nuxt/app';
+
 
 useHead({
+  title: 'Inicio',
   titleTemplate: '%s - Oficina Karen Mazariegos',
   meta: [
     {
@@ -26,6 +29,13 @@ useHead({
     {
       name: 'google-site-verification',
       content: 'XmQ4R4VD1GRD6Orf7foyZquAnyaplQ64_3iUn76bvhk'
+    }
+  ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'  // asegúrate que esté en la carpeta public
     }
   ]
 })
