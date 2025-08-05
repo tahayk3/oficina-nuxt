@@ -4,3 +4,7 @@
     <p>Abogados en Quetzaltenango, especializados en derecho familiar y civil.</p>
   </main>
 </template>
+
+<script setup>
+import '~/assets/css/index.css'
+</script>
