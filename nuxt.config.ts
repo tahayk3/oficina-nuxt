@@ -1,7 +1,10 @@
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: true, // SSR activado para SEO y prerender
   nitro: {
-    preset: 'netlify'
+    preset: 'netlify',
+    prerender: {
+      routes: ['/about', '/'] // rutas que quieres prerenderizar estáticamente
+    }
   },
   modules: [
     '@nuxt/image',
