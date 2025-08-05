@@ -1,10 +1,15 @@
-main {
+.main-index {
   background-color: #000000;
   padding: 20px;
 }
 
-p {
+.index-title {
   color: rgb(61, 255, 2);
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.index-description {
+  color: white;
+  font-size: 1rem;
 }

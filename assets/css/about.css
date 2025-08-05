@@ -1,9 +1,9 @@
-main {
+.main-about {
   background-color: #fafafa;
   padding: 20px;
 }
 
-p {
+.about-text {
   color: darkblue;
   font-weight: bold;
   font-size: 1.2rem;

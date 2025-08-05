@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <p>Acerca de</p>
+  <main class="main-about">
+    <p class="about-text">Acerca de</p>
   </main>
 </template>
 
