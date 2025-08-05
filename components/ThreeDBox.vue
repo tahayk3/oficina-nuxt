@@ -1,20 +1,17 @@
-<template>
-  <div ref="canvasContainer" style="width: 600px; height: 400px;"></div>
-</template>
-
 <script setup>
-import { onMounted, ref } from 'vue'
-import * as THREE from 'three'
+import { ref, onMounted } from 'vue'
 
-const canvasContainer = ref(null)
+const container = ref(null)
 
-onMounted(() => {
+onMounted(async () => {
+  const THREE = await import('three')
+
   const scene = new THREE.Scene()
-  const camera = new THREE.PerspectiveCamera(75, 600 / 400, 0.1, 1000)
+  const camera = new THREE.PerspectiveCamera(75, container.value.clientWidth / container.value.clientHeight, 0.1, 1000)
 
   const renderer = new THREE.WebGLRenderer()
-  renderer.setSize(600, 400)
-  canvasContainer.value.appendChild(renderer.domElement)
+  renderer.setSize(container.value.clientWidth, container.value.clientHeight)
+  container.value.appendChild(renderer.domElement)
 
   const geometry = new THREE.BoxGeometry()
   const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
@@ -32,3 +29,7 @@ onMounted(() => {
   animate()
 })
 </script>
+
+<template>
+  <div ref="container" style="width: 600px; height: 400px;"></div>
+</template>

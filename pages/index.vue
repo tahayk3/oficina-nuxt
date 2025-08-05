@@ -2,7 +2,9 @@
   <main class="main-index">
     <h1 class="index-title">Bienvenidos a la oficina de Karen Mazariegos</h1>
     <p class="index-description">Abogados en Quetzaltenango, especializados en derecho familiar y civil.</p>
-     <ThreeDBox />
+     <client-only>
+      <ThreeDBox />
+    </client-only>
   </main>
 </template>
 
