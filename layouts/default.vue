@@ -1,5 +1,65 @@
+<template>
+  <v-card>
+    <v-layout>
+      <v-theme-provider theme="dark">
+        <!-- App bar -->
+        <v-app-bar color="#1A237E" dark>
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+
+          <v-toolbar-title>Oficina jurídica Quetzaltenango</v-toolbar-title>
+
+          <template v-if="!mobile">
+            <v-btn icon="mdi-filter" variant="text" />
+          </template>
+
+
+        </v-app-bar>
+
+        <!-- Drawer -->
+        <v-navigation-drawer
+          v-model="drawer"
+          :location="mobile ? 'bottom' : undefined"
+          temporary
+          dark
+        >
+          <v-list nav>
+            <v-list-item
+              v-for="item in items"
+              :key="item.value"
+              :prepend-icon="item.icon"
+            >
+              <NuxtLink :to="item.to" class="text-white text-decoration-none">
+                {{ item.title }}
+              </NuxtLink>
+            </v-list-item>
+          </v-list>
+        </v-navigation-drawer>
+      </v-theme-provider>
+
+      <!-- Main content -->
+      <v-main >
+        <v-container>
+          <NuxtPage />
+        </v-container>
+      </v-main>
+    </v-layout>
+  </v-card>
+</template>
+
 <script setup lang="ts">
 import { useHead } from 'nuxt/app';
+import { ref } from 'vue'
+import { useDisplay } from 'vuetify'
+
+const drawer = ref(false)
+const { mobile } = useDisplay()
+
+const items = [
+  { title: 'Inicio', value: 'home', icon: 'mdi-home', to: '/' },
+  { title: 'Sobre Nosotros', value: 'about', icon: 'mdi-account', to: '/acercade' },
+  { title: 'Contacto', value: 'contact', icon: 'mdi-account-group', to: '/contacto' },
+  { title: 'Servicios', value: 'services', icon: 'mdi-briefcase', to: '/servicios' }
+]
 
 
 useHead({
@@ -40,23 +100,5 @@ useHead({
   ]
 })
 </script>
-
-<template>
-  <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Inicio</NuxtLink> |
-        <NuxtLink to="/about">Sobre Nosotros</NuxtLink>
-      </nav>
-    </header>
-    <main>
-      <NuxtPage />
-    </main>
-    <footer>
-      <p>© 2025 Mi Proyecto</p>
-    </footer>
-  </div>
-</template>
-
 
 

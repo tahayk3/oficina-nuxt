@@ -11,12 +11,17 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@nuxt/icon": "^1.15.0",
     "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^3.3.0",
     "@nuxtjs/robots": "^5.4.0",
     "@nuxtjs/sitemap": "^7.4.3",
+    "@primeuix/themes": "^1.2.3",
+    "@primevue/themes": "^4.3.7",
     "nuxt": "^3.17.7",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.7",
     "sharp": "^0.34.3",
     "sitemap": "^8.0.0",
     "three": "^0.179.1",
@@ -25,5 +30,11 @@
   },
   "engines": {
     "node": ">=18.0.0 <=20.0.0"
+  },
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.3.7",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "vuetify": "^3.9.4"
   }
 }

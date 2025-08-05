@@ -13,10 +13,16 @@ export default defineEventHandler((event) => {
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
+  
+    <url>
+      <loc>https://oficina-karen-mazariegos.netlify.app/acercade</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
     <url>
       <loc>https://oficina-karen-mazariegos.netlify.app/contacto</loc>
       <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
+      <priority>0.6</priority>
     </url>
   </urlset>`
 })

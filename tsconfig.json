@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "types": ["nuxt"]
+    "types": ["nuxt"],
+    "skipLibCheck": true,
+    "module": "Node16",
   }
 }

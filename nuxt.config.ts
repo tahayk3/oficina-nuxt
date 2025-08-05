@@ -1,9 +1,12 @@
+import Aura from '@primeuix/themes/aura';
+
 export default defineNuxtConfig({
   ssr: true, // SSR activado para SEO y prerender
+  css: ['vuetify/styles', '@mdi/font/css/materialdesignicons.min.css'],
   nitro: {
     preset: 'netlify',
     prerender: {
-      routes: ['/about', '/'] // rutas que quieres prerenderizar estáticamente
+      routes: ['/acercade', '/', '/servicios', '/contacto'] // rutas que quieres prerenderizar estáticamente
     }
   },
   modules: [
@@ -11,6 +14,9 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/ui',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
-  ]
+    '@nuxtjs/robots',
+    '@primevue/nuxt-module'
+  ],
+  
+  
 })
