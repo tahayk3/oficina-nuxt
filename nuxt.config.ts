@@ -1,12 +1,21 @@
-import Aura from '@primeuix/themes/aura';
+import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-  ssr: true, // SSR activado para SEO y prerender
+  ssr: true,
   css: ['vuetify/styles', '@mdi/font/css/materialdesignicons.min.css'],
+  build: {
+    transpile: ['vuetify'],
+  },
+  vite: {
+    plugins: [vuetify()],
+    ssr: {
+      noExternal: ['vuetify'],
+    },
+  },
   nitro: {
     preset: 'netlify',
     prerender: {
-      routes: ['/acercade', '/', '/servicios', '/contacto'] // rutas que quieres prerenderizar estáticamente
+      routes: ['/acercade', '/', '/servicios', '/contacto']
     }
   },
   modules: [
@@ -15,8 +24,5 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    '@primevue/nuxt-module'
   ],
-  
-  
 })

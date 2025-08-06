@@ -3,5 +3,13 @@
     "types": ["nuxt"],
     "skipLibCheck": true,
     "module": "Node16",
-  }
+    "baseUrl": ".",
+    "paths": {
+      "#app": [".nuxt/types/app"],
+      "#build": [".nuxt/types/build"],
+      "#imports": [".nuxt/types/imports"],
+      "#components/*": [".nuxt/components/*"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
 }
