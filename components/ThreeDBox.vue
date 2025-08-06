@@ -56,7 +56,7 @@ onMounted(async () => {
   pmremGenerator.compileEquirectangularShader()
 
   const rgbeLoader = new RGBELoader()
-  rgbeLoader.load('http://localhost:3000/hdr/cape_hill_1k.hdr', (texture) => {
+  rgbeLoader.load('hdr/cape_hill_1k.hdr', (texture) => {
     const envMap = pmremGenerator.fromEquirectangular(texture).texture
 
     scene.environment = envMap  // Esto hace que materiales PBR reflejen el entorno
