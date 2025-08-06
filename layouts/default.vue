@@ -3,10 +3,10 @@
     <v-layout>
       <v-theme-provider theme="dark">
         <!-- App bar -->
-        <v-app-bar color="#1A237E" dark>
+        <v-app-bar color="#121f2f" dark>
           <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-          <v-toolbar-title>Oficina jurídica Quetzaltenango</v-toolbar-title>
+          <v-toolbar-title style="color: #d8be8b;">Oficina jurídica Quetzaltenango</v-toolbar-title>
 
           <template v-if="!mobile">
             <v-btn icon="mdi-filter" variant="text" />
@@ -95,6 +95,10 @@ useHead({
     {
       name: 'google-site-verification',
       content: 'XmQ4R4VD1GRD6Orf7foyZquAnyaplQ64_3iUn76bvhk'
+    },
+    {
+      property: 'og:site_name',
+      content: 'Oficina juridida Quetzaltenango - expertos en derecho civil'
     }
   ],
   link: [
