@@ -1,8 +1,6 @@
 <script setup>
 import '~/assets/css/about.css'
 
-import { ref } from 'vue'
-
 </script>
 
 <template>
