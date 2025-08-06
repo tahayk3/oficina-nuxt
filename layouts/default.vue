@@ -70,7 +70,7 @@ const items = [
 
 useHead({
   title: 'Inicio',
-  titleTemplate: '%s - Oficina Karen Mazariegos',
+  titleTemplate: '%s - Oficina jurídica Quetzaltenango - expertos en derecho civil',
   meta: [
     {
       name: 'description',
@@ -78,7 +78,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'Oficina Karen Mazariegos Quetzaltenango'
+      content: 'Oficina de abogados Quetzaltenango'
     },
     {
       property: 'og:description',
@@ -98,7 +98,7 @@ useHead({
     },
     {
       property: 'og:site_name',
-      content: 'Oficina juridida Quetzaltenango - expertos en derecho civil'
+      content: 'Oficina jurídica Quetzaltenango - expertos en derecho civil'
     }
   ],
   link: [
