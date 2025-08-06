@@ -11,33 +11,34 @@
           <template v-if="!mobile">
             <v-btn icon="mdi-filter" variant="text" />
           </template>
-
-
         </v-app-bar>
 
-        <!-- Drawer -->
-        <v-navigation-drawer
-          v-model="drawer"
-          :location="mobile ? 'bottom' : undefined"
-          temporary
-          dark
-        >
-          <v-list nav>
-            <v-list-item
-              v-for="item in items"
-              :key="item.value"
-              :prepend-icon="item.icon"
-            >
-              <NuxtLink :to="item.to" class="text-white text-decoration-none">
-                {{ item.title }}
-              </NuxtLink>
-            </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
+        <!-- Drawer (solo en cliente) -->
+        <ClientOnly>
+          <v-navigation-drawer
+            v-model="drawer"
+            :location="mobile ? 'bottom' : undefined"
+            temporary
+            dark
+            v-show="isMounted"
+          >
+            <v-list nav>
+              <v-list-item
+                v-for="item in items"
+                :key="item.value"
+                :prepend-icon="item.icon"
+              >
+                <NuxtLink :to="item.to" class="text-white text-decoration-none">
+                  {{ item.title }}
+                </NuxtLink>
+              </v-list-item>
+            </v-list>
+          </v-navigation-drawer>
+        </ClientOnly>
       </v-theme-provider>
 
       <!-- Main content -->
-      <v-main >
+      <v-main>
         <v-container>
           <NuxtPage />
         </v-container>
@@ -48,11 +49,16 @@
 
 <script setup lang="ts">
 import { useHead } from 'nuxt/app';
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useDisplay } from 'vuetify'
 
 const drawer = ref(false)
 const { mobile } = useDisplay()
+
+const isMounted = ref(false)
+onMounted(() => {
+  isMounted.value = true
+})
 
 const items = [
   { title: 'Inicio', value: 'home', icon: 'mdi-home', to: '/' },
