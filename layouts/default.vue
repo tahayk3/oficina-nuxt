@@ -125,7 +125,7 @@ useHead({
     },
     {
       name: 'google-site-verification',
-      content: 'XmQ4R4VD1GRD6Orf7foyZquAnyaplQ64_3iUn76bvhk'
+      content: ''
     },
     {
       property: 'og:site_name',

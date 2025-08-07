@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
-Sitemap: https://oficina-karen-mazariegos.netlify.app/sitemap.xml
+Sitemap: https://law-firma-legal-quetzaltenango.netlify.app/sitemap.xml
 
