@@ -3,7 +3,7 @@
   <h2 class="custom-heading">
     Áreas de Servicio
   </h2>
-  <v-card>
+  <v-card class="card-services">
     <v-data-iterator :items="games" :items-per-page="3" :search="search">
       <template v-slot:header>
         <v-toolbar class="px-2">

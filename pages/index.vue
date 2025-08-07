@@ -36,6 +36,7 @@
     </div>
 
     <ServicesCard />
+    <Location />
   </main>
 </template>
 
@@ -47,4 +48,5 @@
 import '~/assets/css/index.css'
 import ThreeDBox from '~/components/ThreeDBox.vue'
 import ServicesCard from '~/components/ServicesCard.vue'
+import Location from '~/components/Location.vue'
 </script>
