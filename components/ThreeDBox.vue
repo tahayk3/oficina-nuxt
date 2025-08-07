@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import '~/assets/css/threeDBox.css'
 
 const container = ref(null)
 
@@ -46,7 +47,7 @@ onMounted(async () => {
   directionalLight.position.set(5, 10, 7.5)
   scene.add(directionalLight)
 
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.3)
+  const ambientLight = new THREE.AmbientLight(0xffffff, 2.5)
   scene.add(ambientLight)
 
   const gltfLoader = new GLTFLoader()
@@ -100,7 +101,7 @@ onMounted(async () => {
   animate()
 })
 
-import '~/assets/css/threeDBox.css'
+
 </script>
 
 <template>

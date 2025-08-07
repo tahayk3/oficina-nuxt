@@ -1,0 +1,14 @@
+/* assets/css/base.css */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+    font-family: "Changa One", sans-serif;
+    
+}
