@@ -6,14 +6,16 @@
         <v-app-bar color="#121f2f" dark>
           <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-          <v-toolbar-title style="color: #d8be8b;">Oficina jurídica Quetzaltenango</v-toolbar-title>
+          <v-toolbar-title style="color: #d8be8b;">
+            LAW – Firma Legal en Quetzaltenango
+          </v-toolbar-title>
 
           <template v-if="!mobile">
             <v-btn icon="mdi-filter" variant="text" />
           </template>
         </v-app-bar>
 
-        <!-- Drawer (solo en cliente) -->
+        <!-- Drawer -->
         <ClientOnly>
           <v-navigation-drawer
             v-model="drawer"
@@ -44,7 +46,7 @@
         </v-container>
       </v-main>
 
-      <!-- Footer -->
+      <!-- Footer optimizado -->
       <v-footer class="text-center d-flex flex-column ga-2 py-4" color="#5e2129">
         <div class="d-flex ga-3">
           <v-btn
@@ -59,14 +61,13 @@
         <v-divider class="my-2" thickness="2" width="50"></v-divider>
 
         <div class="text-caption font-weight-regular opacity-60">
-          Comprometidos con brindar asesoría legal de excelencia en Quetzaltenango, apoyando a nuestra comunidad con profesionalismo y confianza.
+          LAW es una firma legal en Quetzaltenango. Comprometidos con brindar asesoría legal de excelencia, apoyando a nuestra comunidad con profesionalismo y confianza.
         </div>
 
         <div>
-          © {{ new Date().getFullYear() }} — Oficina jurídica Quetzaltenango — Todos los derechos reservados
+          © {{ new Date().getFullYear() }} — LAW – Firma Legal Quetzaltenango — Todos los derechos reservados
         </div>
       </v-footer>
-
     </v-layout>
   </v-card>
 </template>
@@ -76,12 +77,12 @@ import { useHead } from 'nuxt/app';
 import { ref, onMounted } from 'vue'
 import { useDisplay } from 'vuetify'
 
-  const icons = [
-    'mdi-facebook',
-    'mdi-twitter',
-    'mdi-linkedin',
-    'mdi-instagram',
-  ]
+const icons = [
+  'mdi-facebook',
+  'mdi-twitter',
+  'mdi-linkedin',
+  'mdi-instagram',
+]
 
 const drawer = ref(false)
 const { mobile } = useDisplay()
@@ -98,22 +99,26 @@ const items = [
   { title: 'Servicios', value: 'services', icon: 'mdi-briefcase', to: '/servicios' }
 ]
 
-
+// SEO optimizado con branding LAW
 useHead({
-  title: 'Inicio',
-  titleTemplate: '%s - Oficina jurídica Quetzaltenango - expertos en derecho civil',
+  title: 'LAW – Firma Legal en Quetzaltenango',
+  titleTemplate: '%s | Abogados en Quetzaltenango – Derecho Civil y Familiar',
   meta: [
     {
       name: 'description',
-      content: 'Oficina de abogados en Quetzaltenango, especializada en derecho familiar y civil.'
+      content: 'LAW es una firma legal en Quetzaltenango especializada en derecho civil, familiar, laboral y corporativo. Abogados con experiencia y compromiso con la comunidad quetzalteca.'
     },
     {
       property: 'og:title',
-      content: 'Oficina de abogados Quetzaltenango'
+      content: 'LAW – Abogados en Quetzaltenango'
     },
     {
       property: 'og:description',
-      content: 'Oficina de abogados en Quetzaltenango, especializada en derecho familiar y civil.'
+      content: 'LAW, su firma legal en Quetzaltenango para derecho civil, familiar, laboral y corporativo. Abogados comprometidos con la defensa de sus derechos.'
+    },
+    {
+      name: 'keywords',
+      content: 'abogados Quetzaltenango, firma legal Quetzaltenango, derecho civil, derecho familiar, derecho penal, derecho mercantil, derecho notarial, solución de conflictos, jurisdicción voluntaria, abogados Guatemala, abogados para guatemaltecos en el extranjero'
     },
     {
       property: 'og:type',
@@ -125,21 +130,19 @@ useHead({
     },
     {
       name: 'google-site-verification',
-      content: ''
+      content: '' // tu código de verificación de Google
     },
     {
       property: 'og:site_name',
-      content: 'Oficina jurídica Quetzaltenango - expertos en derecho civil'
+      content: 'LAW – Firma Legal Quetzaltenango'
     }
   ],
   link: [
     {
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/favicon.ico'  // asegúrate que esté en la carpeta public
+      href: '/favicon.ico'
     }
   ]
 })
 </script>
-
-
