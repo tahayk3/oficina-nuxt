@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-8">
+  <v-container class="container-services-card">
   <h2 class="custom-heading">
     Áreas de Servicio
   </h2>
