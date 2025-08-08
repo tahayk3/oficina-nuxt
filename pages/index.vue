@@ -12,10 +12,10 @@
     <div class="layout">
       <!-- Texto a la izquierda (30%) -->
       <div class="text-section left">
-        <h1 class="index-title">Bienvenidos a la oficina jurídica en Quetzaltenango</h1>
+        <h1 class="index-title">Bienvenidos a <br> LAW – Firma Legal en Quetzaltenango</h1>
         <p class="index-description">
           Especializados en derecho familiar, notarial, mercantil, penal y civil.
-          Nuestra oficina jurídica brinda asesoría legal especializada en Derecho Civil, orientada a resolver de forma eficaz y personalizada los asuntos legales de nuestros clientes.
+          Nuestra firma legal brinda asesoría especializada en Derecho Civil, orientada a resolver de forma eficaz y personalizada los asuntos legales de nuestros clientes.
           Con una trayectoria sólida y un compromiso firme con la ética profesional, ofrecemos un servicio cercano, confiable y adaptado a cada caso.
         </p>
       </div>

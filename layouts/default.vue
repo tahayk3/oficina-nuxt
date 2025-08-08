@@ -130,7 +130,7 @@ useHead({
     },
     {
       name: 'google-site-verification',
-      content: '' // tu código de verificación de Google
+      content: 'XmQ4R4VD1GRD6Orf7foyZquAnyaplQ64_3iUn76bvhk'
     },
     {
       property: 'og:site_name',
