@@ -57,7 +57,7 @@ onMounted(async () => {
   pmremGenerator.compileEquirectangularShader()
 
   const rgbeLoader = new RGBELoader()
-  rgbeLoader.load('hdr/cape_hill_1k.hdr', (texture) => {
+  rgbeLoader.load('https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Fhdr.hdr?alt=media&token=bb0c8867-de55-4013-b8c4-65960190cd82', (texture) => {
     const envMap = pmremGenerator.fromEquirectangular(texture).texture
 
     scene.environment = envMap  // Esto hace que materiales PBR reflejen el entorno
@@ -70,7 +70,7 @@ onMounted(async () => {
 
   let model = null 
   // 👇 Cambia la ruta al archivo .glb que quieras cargar
-  gltfLoader.load('/models/02.glb', (gltf) => {
+  gltfLoader.load('https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F02.glb?alt=media&token=6e9ab8ea-adac-40c5-8768-5c9e4fc2b388', (gltf) => {
   model = gltf.scene
 
   // Ajustar escala si es necesario
@@ -107,3 +107,5 @@ onMounted(async () => {
 <template>
   <div ref="container" class="container"></div>
 </template>
+
+
