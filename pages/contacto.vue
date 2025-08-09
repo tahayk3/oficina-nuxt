@@ -1,32 +1,13 @@
-<script setup>
-import '~/assets/css/about.css'
-
-</script>
-
 <template>
-  <main class="main-about">
-    <h1>Contact Page</h1>
-    <p>This is the contact page of the application.</p>
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-    <p>This is the contact page of the application.</p>
-
-    <p>This is the contact page of the application.</p>
-
-    
-
-
-  </main>
+  <div>
+    <h1>Contáctanos</h1>
+    <ContactForm />
+  </div>
 </template>
+
+<script>
+import ContactForm from "@/components/ContactForm.vue";
+export default {
+  components: { ContactForm }
+};
+</script>

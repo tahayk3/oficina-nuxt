@@ -34,9 +34,16 @@
         </p>
       </div>
     </div>
-
     <ServicesCard />
     <Location />
+
+    <!-- formulario de contacto -->
+    <section id="contacto" style="margin-top: 2rem;">
+      <h2>Contáctanos</h2>
+      <ContactForm />
+    </section>
+
+
   </main>
 </template>
 
@@ -44,9 +51,9 @@
 
 
 <script setup>
-
 import '~/assets/css/index.css'
 import ThreeDBox from '~/components/ThreeDBox.vue'
 import ServicesCard from '~/components/ServicesCard.vue'
 import Location from '~/components/Location.vue'
+import ContactForm from '~/components/ContactForm.vue'
 </script>
