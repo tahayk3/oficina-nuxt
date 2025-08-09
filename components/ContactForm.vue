@@ -5,7 +5,6 @@
     data-netlify="true"
     data-netlify-recaptcha="true"
     netlify-honeypot="bot-field"
-    @submit.prevent="handleSubmit"
     class="contact-form"
   >
     <!-- Campo honeypot oculto -->
@@ -52,12 +51,6 @@ export default {
       }
     };
   },
-  methods: {
-    async handleSubmit() {
-      alert("Formulario enviado correctamente (simulación local)");
-      // Netlify manejará el POST real en producción
-    }
-  }
 };
 </script>
 
