@@ -73,71 +73,65 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue'
 
-import { useToast } from "vue-toastification"
+import { useToast } from 'vue-toastification/dist/index.mjs'
+
 const toast = useToast()
 
-export default {
-  name: "ContactForm",
-  data() {
-    return {
-      form: {
-        name: "",
-        email: "",
-        message: "",
-      },
-      sending: false,
-    };
-  },
-  methods: {
-    async handleSubmit(e) {
+const form = ref({
+  name: '',
+  email: '',
+  message: ''
+})
 
-      // Prevenir doble envío
-      if (this.sending) return;
+const sending = ref(false)
 
-      // Verificar si el captcha fue resuelto
-      const token =
-        window.grecaptcha && window.grecaptcha.getResponse
-          ? window.grecaptcha.getResponse()
-          : "";
+async function handleSubmit(e) {
+  e.preventDefault()
 
-      if (!token) {
-       toast.error("Resuelve el captcha antes de enviar el formulario")
-        return;
-      }
+  if (sending.value) return
 
-      this.sending = true;
+  const token =
+    window.grecaptcha && window.grecaptcha.getResponse
+      ? window.grecaptcha.getResponse()
+      : ''
 
-      const formData = new FormData(e.target);
-      formData.append("g-recaptcha-response", token);
+  if (!token) {
+    toast.error('Resuelve el captcha antes de enviar el formulario')
+    return
+  }
 
-      try {
-        const response = await fetch("/", {
-          method: "POST",
-          body: formData,
-        });
+  sending.value = true
 
-        if (response.ok) {
-          toast.success("Formulario enviado con éxito, nos contactaremos pronto");
-          this.form.name = "";
-          this.form.email = "";
-          this.form.message = "";
-          if (window.grecaptcha) window.grecaptcha.reset();
-        } else {
-          const text = await response.text();
-          console.error("Error Netlify:", text);
-          alert("❌ Hubo un problema al enviar el formulario.");
-        }
-      } catch (err) {
-        console.error(err);
-        alert("❌ Error de conexión al enviar.");
-      } finally {
-        this.sending = false;
-      }
-    },
-  },
-};
+  const formData = new FormData(e.target)
+  formData.append('g-recaptcha-response', token)
+
+  try {
+    const response = await fetch('/', {
+      method: 'POST',
+      body: formData
+    })
+
+    if (response.ok) {
+      toast.success('Formulario enviado con éxito, nos contactaremos pronto')
+      form.value.name = ''
+      form.value.email = ''
+      form.value.message = ''
+      if (window.grecaptcha) window.grecaptcha.reset()
+    } else {
+      const text = await response.text()
+      console.error('Error Netlify:', text)
+      alert('❌ Hubo un problema al enviar el formulario.')
+    }
+  } catch (err) {
+    console.error(err)
+    alert('❌ Error de conexión al enviar.')
+  } finally {
+    sending.value = false
+  }
+}
 </script>
 
 
