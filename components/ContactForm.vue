@@ -69,12 +69,14 @@
     <div class="container-phone">
       <Phone />
     </div>
+    
   </div>
 </template>
 
 <script>
-import { useToast } from '#imports' 
 
+import { useToast } from "vue-toastification"
+const toast = useToast()
 
 export default {
   name: "ContactForm",
@@ -91,8 +93,6 @@ export default {
   methods: {
     async handleSubmit(e) {
 
-       const toast = useToast()
-
       // Prevenir doble envío
       if (this.sending) return;
 
@@ -103,11 +103,7 @@ export default {
           : "";
 
       if (!token) {
-        toast.add({
-          title: "Captcha requerido",
-          description: "Por favor resuelve el captcha antes de enviar.",
-          color: "red",
-        });
+       toast.error("Resuelve el captcha antes de enviar el formulario")
         return;
       }
 
@@ -123,11 +119,7 @@ export default {
         });
 
         if (response.ok) {
-          toast.add({
-            title: "✅ Formulario enviado con éxito.",
-            description: "Gracias por contactarnos.",
-            color: "green",
-          });
+          toast.success("Formulario enviado con éxito, nos contactaremos pronto");
           this.form.name = "";
           this.form.email = "";
           this.form.message = "";
