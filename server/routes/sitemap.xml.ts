@@ -15,7 +15,7 @@ export default defineEventHandler((event) => {
     </url>
   
     <url>
-      <loc>https://law-firma-legal-quetzaltenango.netlify.app/acercade</loc>
+      <loc>https://law-firma-legal-quetzaltenango.netlify.app/equipo</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>

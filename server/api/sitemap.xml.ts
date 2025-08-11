@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
   const links = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
     { url: '/servicios', changefreq: 'weekly', priority: 0.8 },
-    { url: '/acercade', changefreq: 'monthly', priority: 0.7 },
+    { url: '/equipo', changefreq: 'monthly', priority: 0.7 },
     { url: '/contacto', changefreq: 'monthly', priority: 0.5 },
   ]
 
