@@ -21,19 +21,37 @@
         <!-- Nombre -->
         <div class="brutalist-container">
           <label class="brutalist-label">Nombre</label>
-          <input class="brutalist-input smooth-type" type="text" name="name" v-model="form.name" required />
+          <input
+            class="brutalist-input smooth-type"
+            type="text"
+            name="name"
+            v-model="form.name"
+            required
+          />
         </div>
 
         <!-- Email -->
         <div class="brutalist-container">
           <label class="brutalist-label">Correo electrónico</label>
-          <input class="brutalist-input smooth-type" type="email" name="email" v-model="form.email" required />
+          <input
+            class="brutalist-input smooth-type"
+            type="email"
+            name="email"
+            v-model="form.email"
+            required
+          />
         </div>
 
         <!-- Mensaje -->
         <div class="brutalist-container">
           <label class="brutalist-label">Mensaje</label>
-          <textarea rows="8"  class="brutalist-input smooth-type" name="message" v-model="form.message" required></textarea>
+          <textarea
+            rows="8"
+            class="brutalist-input smooth-type"
+            name="message"
+            v-model="form.message"
+            required
+          ></textarea>
         </div>
 
         <!-- reCAPTCHA -->
@@ -41,15 +59,15 @@
 
         <!-- Botón -->
         <button class="xd" type="submit">
-          <a><span>Enviar</span></a> 
+          <span>Enviar</span>
         </button>
       </form>
+    </div>
 
-      </div>
-        <div class="container-phone">
-          <Phone />
-        </div>
-      </div>
+    <div class="container-phone">
+      <Phone />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -60,13 +78,31 @@ export default {
       form: {
         name: "",
         email: "",
-        message: ""
-      }
+        message: "",
+      },
+      sending: false,
     };
   },
   methods: {
     async handleSubmit(e) {
+      // Prevenir doble envío
+      if (this.sending) return;
+
+      // Verificar si el captcha fue resuelto
+      const token =
+        window.grecaptcha && window.grecaptcha.getResponse
+          ? window.grecaptcha.getResponse()
+          : "";
+
+      if (!token) {
+        alert("Por favor resuelve el captcha antes de enviar.");
+        return;
+      }
+
+      this.sending = true;
+
       const formData = new FormData(e.target);
+      formData.append("g-recaptcha-response", token);
 
       try {
         const response = await fetch("/", {
@@ -75,21 +111,27 @@ export default {
         });
 
         if (response.ok) {
-          alert("Formulario enviado con éxito");
+          alert("✅ Formulario enviado con éxito.");
           this.form.name = "";
           this.form.email = "";
           this.form.message = "";
+          if (window.grecaptcha) window.grecaptcha.reset();
         } else {
-          alert("Error al enviar");
+          const text = await response.text();
+          console.error("Error Netlify:", text);
+          alert("❌ Hubo un problema al enviar el formulario.");
         }
       } catch (err) {
         console.error(err);
-        alert("Error en el envío");
+        alert("❌ Error de conexión al enviar.");
+      } finally {
+        this.sending = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
+
 
 
 
