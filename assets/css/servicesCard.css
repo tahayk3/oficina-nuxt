@@ -1,16 +1,122 @@
-.custom-heading {
-  color: #d8be8b ; /* Blanco para contraste */
-  font-size: 2.5rem;
-  font-weight: bold;
+.title {
+  width: 100%;
+  color: #d8be8b;
   padding: 1rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: left;
-  margin-bottom: 0rem;
-  border-bottom: 10px double #d8be8b;
+  text-align: center;
+  border-bottom: 5px double #d8b98b;
+  font-size: 2.0rem;
+
+
+  background-color: #121f2f;
+
+  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  background-image: url("https://www.transparenttextures.com/patterns/pinstripe-light.png");
+
+
+  background-repeat: repeat;        
+  background-size: auto;            
+  background-position: top left;   
+  
+
+
 }
 
 .card-services{
   font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/* cartas*/
+/* Contenedor principal */
+.container-services-card {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* Título principal */
+.container-services-card  {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #d8be8b; /* Dorado elegante */
+  margin-bottom: 1.5rem;
+}
+
+/* Tarjetas de servicio */
+.card-services {
+  background-color: transparent; /* Sin fondo extra */
+  box-shadow: none;
+}
+
+/* Tarjeta individual */
+.card-services .v-card {
+  background-color: white;
+  border: 1px solid #d8be8b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-services .v-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen dentro de la tarjeta */
+.card-services .v-img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Título de la tarjeta */
+.card-services .v-list-item strong {
+  color: #121f2f;
+}
+
+/* Subtítulo de la tarjeta */
+.card-services .v-list-item .v-list-item__subtitle {
+  color: #555;
+}
+
+/* Iconos */
+.card-services .v-icon {
+  color: #d8be8b;
+}
+
+/* Botón "Ver más" */
+.card-services .v-btn {
+  background-color: #121f2f;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.card-services .v-btn:hover {
+  background-color: #d8be8b;
+  color: #121f2f;
+}
+
+/* Buscador */
+.card-services .v-text-field {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.card-services .v-text-field input {
+  color: #121f2f;
+}
+
+/* Paginación */
+.card-services .pa-4 {
+  background-color: transparent;
+}
+
+.card-services .v-btn[variant="tonal"] {
+  background-color: #d8be8b !important;
+  color: #121f2f !important;
 }
 

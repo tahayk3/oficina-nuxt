@@ -1,5 +1,9 @@
+<script setup>
+import ServicesCard from '~/components/ServicesCard.vue'
+</script>
+
 <template>
   <main class="main-about">
-    <p class="about-text">Servicios</p>
+    <ServicesCard/>
   </main>
 </template>

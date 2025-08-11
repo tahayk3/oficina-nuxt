@@ -1,6 +1,8 @@
 <template>
   <main class="main-index">
-    <div class="emoji-background">
+
+    <div class="layout">
+      <div class="emoji-background">
       <v-icon icon="mdi-scale-balance" class="floating-icon"></v-icon>
       <v-icon icon="mdi-file-document-outline" class="floating-icon"></v-icon>
       <v-icon icon="mdi-bank" class="floating-icon"></v-icon>
@@ -8,8 +10,6 @@
       <v-icon icon="mdi-pencil" class="floating-icon"></v-icon>
       <v-icon icon="mdi-file-sign" class="floating-icon"></v-icon>
     </div>
-
-    <div class="layout">
       <!-- Texto a la izquierda (30%) -->
       <div class="text-section left">
         <h1 class="index-title">Bienvenidos a <br> LAW – Firma Legal en Quetzaltenango</h1>
@@ -29,21 +29,24 @@
       <div class="text-section right">
         <h2 class="index-title">¿Cómo podemos ayudarte?</h2>
         <p class="index-description">
-          Rellena este <a href="">formulario</a> para contactar con nosotros. Te responderemos lo antes posible.
-          También puedes contactar directamente en nuestra oficina. Consulta la sección de <a href="">ubicación</a> para más información.
+          Rellena este <a href="#contacto">formulario</a> para contactar con nosotros. Te responderemos lo antes posible.
+          También puedes contactar directamente en nuestras oficinas. Consulta la sección de <a href="#ubicacion">ubicación</a> para más información.
         </p>
       </div>
     </div>
-    <ServicesCard />
-    <Location />
 
-    <!-- formulario de contacto -->
-    <section id="contacto" style="margin-top: 2rem;">
-      <h2>Contáctanos</h2>
-      <ContactForm />
+    <section id="">
+      <ServicesCard />
     </section>
 
+    <section id="ubicacion">
+      <Location />
+    </section>
 
+    <!-- formulario de contacto -->
+    <section id="contacto" style="margin-top: 1.5rem; margin-bottom: 5rem;">
+      <ContactForm />
+    </section>
   </main>
 </template>
 

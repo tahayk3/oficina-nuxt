@@ -1,6 +1,6 @@
 <template>
   <v-container class="container-services-card">
-  <h2 class="custom-heading">
+  <h2 class="title">
     Áreas de Servicio
   </h2>
   <v-card class="card-services">
@@ -12,7 +12,7 @@
             density="comfortable"
             placeholder="Buscar área de servicio"
             prepend-inner-icon="mdi-magnify"
-            style="max-width: 300px"
+            style="max-width: 100%"
             variant="solo"
             clearable
             hide-details
@@ -45,8 +45,9 @@
                   <v-btn
                     class="text-none"
                     size="small"
-                    text="Ver más"
+                    text="Contactar"
                     variant="flat"
+                    href="#contacto"
                     border
                   >
                   </v-btn>
@@ -68,7 +69,7 @@
             @click="prevPage"
           ></v-btn>
 
-          <div class="mx-2 text-caption">
+          <div class="mx-12 text-caption">
             Página {{ page }} de {{ pageCount }}
           </div>
 
@@ -150,8 +151,6 @@
       advanced: true,
       duration: '2 minutos de lectura',
     },
-    
-
   ]
 </script>
 
