@@ -10,6 +10,7 @@
         data-netlify-recaptcha="true"
         netlify-honeypot="bot-field"
         class="contact-form"
+        @submit.prevent="handleSubmit"
       >
         <!-- Campo honeypot oculto -->
         <input type="hidden" name="form-name" value="contact" />
@@ -52,8 +53,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: "ContactForm",
   data() {
@@ -65,8 +64,34 @@ export default {
       }
     };
   },
+  methods: {
+    async handleSubmit(e) {
+      const formData = new FormData(e.target);
+
+      try {
+        const response = await fetch("/", {
+          method: "POST",
+          body: formData,
+        });
+
+        if (response.ok) {
+          alert("Formulario enviado con éxito");
+          this.form.name = "";
+          this.form.email = "";
+          this.form.message = "";
+        } else {
+          alert("Error al enviar");
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Error en el envío");
+      }
+    }
+  }
 };
 </script>
+
+
 
 <style scoped>
 .title {
