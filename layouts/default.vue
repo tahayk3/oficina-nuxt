@@ -94,8 +94,8 @@ onMounted(() => {
 
 const items = [
   { title: 'Inicio', value: 'home', icon: 'mdi-home', to: '/' },
-  { title: 'Sobre Nosotros', value: 'about', icon: 'mdi-account', to: '/acercade' },
-  { title: 'Contacto', value: 'contact', icon: 'mdi-account-group', to: '/contacto' },
+  { title: 'Nuestro equipo', value: 'about', icon: 'mdi-account-group', to: '/equipo' },
+  { title: 'Contacto', value: 'contact', icon: 'mdi-phone', to: '/contacto' },
   { title: 'Servicios', value: 'services', icon: 'mdi-briefcase', to: '/servicios' }
 ]
 
