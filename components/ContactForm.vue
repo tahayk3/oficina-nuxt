@@ -73,6 +73,9 @@
 </template>
 
 <script>
+import { useToast } from '#imports' 
+
+
 export default {
   name: "ContactForm",
   data() {
@@ -87,6 +90,9 @@ export default {
   },
   methods: {
     async handleSubmit(e) {
+
+       const toast = useToast()
+
       // Prevenir doble envío
       if (this.sending) return;
 
@@ -97,7 +103,11 @@ export default {
           : "";
 
       if (!token) {
-        alert("Por favor resuelve el captcha antes de enviar.");
+        toast.add({
+          title: "Captcha requerido",
+          description: "Por favor resuelve el captcha antes de enviar.",
+          color: "red",
+        });
         return;
       }
 
@@ -113,7 +123,11 @@ export default {
         });
 
         if (response.ok) {
-          alert("✅ Formulario enviado con éxito.");
+          toast.add({
+            title: "✅ Formulario enviado con éxito.",
+            description: "Gracias por contactarnos.",
+            color: "green",
+          });
           this.form.name = "";
           this.form.email = "";
           this.form.message = "";
