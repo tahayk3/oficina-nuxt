@@ -32,8 +32,9 @@ const currentIndex = shallowRef(0)
           <div class="overlay-info" v-if="item">
             <v-avatar size="50">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Ffavicon.ico?alt=media&token=ad767cce-4578-46ac-b3dc-6ef1d39e5219"
+                src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Ff6eb74db-e594-4f15-981a-ed7437a0f6bf-2.webp?alt=media&token=810bf657-5f57-4e0a-9027-4fb16a67afae"
                 alt="Avatar"
+                loading="lazy"
               />
             </v-avatar>
             <div class="text">

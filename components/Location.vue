@@ -21,9 +21,9 @@ const offices = {
   oficina2: {
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.9545443032739!2d-91.51874899669666!3d14.833803382505598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858ebdd47c7240ef%3A0x30af6ebbef439dde!2zUGF0c3kg4oCiIFhlbGE!5e0!3m2!1ses-419!2sgt!4v1754845449934!5m2!1ses-419!2sgt',
     items: [
-      { authorName: 'Dirección 2', subtitle: 'LAW sucursal', src: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F3.png?alt=media&token=42e0f0ea-b237-4637-8bc9-ab13986530a7' },
+      { authorName: 'Dirección 2', subtitle: 'LAW firma legal', src: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F3.png?alt=media&token=42e0f0ea-b237-4637-8bc9-ab13986530a7' },
       { authorName: 'Horarios', subtitle: 'LAW firma legal', src: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F2.png?alt=media&token=354ae391-3c53-497a-a131-b76733490739' },
-      { authorName: 'Foto', subtitle: 'LAW sucursal', src: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F116060-Quetzaltenango.webp?alt=media&token=9fda17e4-cd94-4eb2-855e-e4e560c9c43c' }
+      { authorName: 'Foto', subtitle: 'LAW firma legal', src: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F116060-Quetzaltenango.webp?alt=media&token=9fda17e4-cd94-4eb2-855e-e4e560c9c43c' }
     ]
   }
 }

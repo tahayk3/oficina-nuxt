@@ -141,7 +141,7 @@ useHead({
     {
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/favicon.ico'
+      href: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Ff6eb74db-e594-4f15-981a-ed7437a0f6bf-2.webp?alt=media&token=810bf657-5f57-4e0a-9027-4fb16a67afae'
     }
   ]
 })
