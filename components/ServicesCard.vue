@@ -137,11 +137,11 @@
       duration: '1 minuto de lectura',
     },
     {
-      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F12.png?alt=media&token=462df6fe-8e7a-42d8-8d03-77b5f8f7d292',
-      title: 'Solución de Conflictos',
-      subtitle: 'Rama del derecho que se ocupa de la resolución pacífica de disputas y conflictos entre partes, ya sea a través de la mediación, el arbitraje o otros métodos alternativos de resolución de conflictos.',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F05.png?alt=media&token=8e2bdbc1-1ebe-4341-8563-6b437422d03b',
+      title: 'Derecho Penal',
+      subtitle: 'Rama del derecho que se encarga de definir los delitos y las penas correspondientes, así como de regular la aplicación de la justicia penal en un país o jurisdicción.',
       advanced: true,
-      duration: '1 minuto de lectura',
+      duration: '2 minutos de lectura',
     },
     {
       img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F14.png?alt=media&token=d98726b6-0a2f-4c7f-95ba-d8a82d3bc901',
@@ -151,11 +151,11 @@
       duration: '1 minuto de lectura',
     },
         {
-      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F05.png?alt=media&token=8e2bdbc1-1ebe-4341-8563-6b437422d03b',
-      title: 'Derecho Penal',
-      subtitle: 'Rama del derecho que se encarga de definir los delitos y las penas correspondientes, así como de regular la aplicación de la justicia penal en un país o jurisdicción.',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F12.png?alt=media&token=462df6fe-8e7a-42d8-8d03-77b5f8f7d292',
+      title: 'Solución de Conflictos',
+      subtitle: 'Rama del derecho que se ocupa de la resolución pacífica de disputas y conflictos entre partes, ya sea a través de la mediación, el arbitraje o otros métodos alternativos de resolución de conflictos.',
       advanced: true,
-      duration: '2 minutos de lectura',
+      duration: '1 minuto de lectura',
     },
   ]
 </script>
