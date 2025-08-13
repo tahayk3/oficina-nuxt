@@ -116,10 +116,10 @@
       duration: '2 minuto de lectura',
     },
     {
-      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F07.png?alt=media&token=1d3f0e60-3f1b-45f6-8102-47b5368e45ec',
-      title: 'Derecho Mercantil',
-      subtitle: 'Es la rama del derecho que regula las relaciones comerciales y mercantiles, incluyendo contratos, sociedades, quiebras y otros aspectos relacionados con el comercio.',
-      advanced: false,
+      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F12.png?alt=media&token=462df6fe-8e7a-42d8-8d03-77b5f8f7d292',
+      title: 'Solución de Conflictos',
+      subtitle: 'Rama del derecho que se ocupa de la resolución pacífica de disputas y conflictos entre partes, ya sea a través de la mediación, el arbitraje o otros métodos alternativos de resolución de conflictos.',
+      advanced: true,
       duration: '1 minuto de lectura',
     },
     {
@@ -150,13 +150,13 @@
       advanced: true,
       duration: '1 minuto de lectura',
     },
-        {
-      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F12.png?alt=media&token=462df6fe-8e7a-42d8-8d03-77b5f8f7d292',
-      title: 'Solución de Conflictos',
-      subtitle: 'Rama del derecho que se ocupa de la resolución pacífica de disputas y conflictos entre partes, ya sea a través de la mediación, el arbitraje o otros métodos alternativos de resolución de conflictos.',
-      advanced: true,
+    {
+      img: 'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F07.png?alt=media&token=1d3f0e60-3f1b-45f6-8102-47b5368e45ec',
+      title: 'Derecho Mercantil',
+      subtitle: 'Es la rama del derecho que regula las relaciones comerciales y mercantiles, incluyendo contratos, sociedades, quiebras y otros aspectos relacionados con el comercio.',
+      advanced: false,
       duration: '1 minuto de lectura',
-    },
+    }
   ]
 </script>
 
