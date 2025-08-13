@@ -424,13 +424,16 @@ button a span {
 
 @media (max-width: 600px) {
  .container-contacto{
-  display:block;
+  display: flex; /* para usar flex-direction */
+  flex-direction: column-reverse; /* aquí ocurre la magia */
   justify-content: center;
   align-items: center;
+  
 }
   .container-form{
   width: 100%;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 0px;
 }
 .container-phone{
   width: 100%;

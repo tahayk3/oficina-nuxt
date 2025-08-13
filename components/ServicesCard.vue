@@ -4,12 +4,11 @@
     Áreas de Servicio
   </h2>
   <v-card class="card-services">
-    <v-data-iterator :items="games" :items-per-page="3" :search="search">
+    <v-data-iterator :items="games" :items-per-page="itemsPerPage" :search="search">
       <template v-slot:header>
-        <v-toolbar class="px-2">
+        <v-toolbar class="px-2" color="#fff">
           <v-text-field
             v-model="search"
-            density="comfortable"
             placeholder="Buscar área de servicio"
             prepend-inner-icon="mdi-magnify"
             style="max-width: 100%"
@@ -90,8 +89,15 @@
 
 
 <script setup>
-  import { shallowRef } from 'vue'
+  import { shallowRef, computed  } from 'vue'
   import '~/assets/css/servicesCard.css'
+  import { useDisplay } from 'vuetify'
+
+  // Detecta el tamaño de pantalla
+  const { smAndDown } = useDisplay()
+
+  // Cambia items-per-page según sea móvil o PC
+  const itemsPerPage = computed(() => (smAndDown.value ? 2 : 6))
 
   const search = shallowRef('')
   const games = [

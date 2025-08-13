@@ -39,6 +39,10 @@
       <ServicesCard />
     </section>
 
+    <section id="valores">
+      <ValuesTimeLine />
+    </section>
+
     <section id="ubicacion">
       <Location />
     </section>
@@ -59,4 +63,5 @@ import ThreeDBox from '~/components/ThreeDBox.vue'
 import ServicesCard from '~/components/ServicesCard.vue'
 import Location from '~/components/Location.vue'
 import ContactForm from '~/components/ContactForm.vue'
+import ValuesTimeLine from '~/components/ValuesTimeLine.vue'
 </script>

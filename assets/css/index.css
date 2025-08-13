@@ -4,6 +4,7 @@
   height: 100vh; /* Ocupa toda la altura de la ventana */
   flex-direction: row; /* Horizontal por defecto */
   align-items: center; 
+  position: relative;
 }
 
 .text-section {
