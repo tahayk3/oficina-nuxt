@@ -41,14 +41,16 @@ const currentOffice = computed(() => offices[tab.value])
         :items="tabs"
         align-tabs="center"
         color="#d8be8b"
-        height="60"
+        height="40"
         slider-color="#d8be8b"
+        class="custom-tabs"
       >
         <template v-slot:tab="{ item }">
           <v-tab
             :prepend-icon="item.icon"
             :text="item.text"
             :value="item.value"
+            class="custom-tab"
           ></v-tab>
         </template>
       </v-tabs>
@@ -117,7 +119,12 @@ const currentOffice = computed(() => offices[tab.value])
   width: 60%;
   overflow: hidden;
   padding: 10px;
- 
+}
+
+
+.custom-tab {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:15px !important;
 }
 
 @media (max-width: 768px) {

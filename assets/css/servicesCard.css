@@ -1,11 +1,13 @@
 .title {
   width: 100%;
   color: #d8be8b;
-  padding: 1rem 2rem;
+  padding: 0rem 0rem;
   border-radius: 12px;
   text-align: left;
   font-size: 2.5rem;
 }
+
+
 
 .card-services{
   font-family:Georgia, 'Times New Roman', Times, serif
