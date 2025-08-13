@@ -3,25 +3,8 @@
   color: #d8be8b;
   padding: 1rem 2rem;
   border-radius: 12px;
-  text-align: center;
-  border-bottom: 5px double #d8b98b;
-  font-size: 2.0rem;
-
-
-  background-color: #121f2f;
-
-  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
-  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
-  background-image: url("https://www.transparenttextures.com/patterns/pinstripe-light.png");
-
-
-  background-repeat: repeat;        
-  background-size: auto;            
-  background-position: top left;   
-  
-
-
+  text-align: left;
+  font-size: 2.5rem;
 }
 
 .card-services{

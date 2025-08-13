@@ -1,5 +1,5 @@
 <template>
-  <h2 class="title">Contacto con LAW - firma legal</h2>
+  <h2 class="title">Contacto con LAW firma legal</h2>
 
   <div class="container-contacto">
     <div class="container-form">
@@ -139,15 +139,14 @@ async function handleSubmit(e) {
 
 <style scoped>
 .title {
+  width: 100%;
   color: #d8be8b;
-  font-size: 2.0rem;
   padding: 1rem 2rem;
   border-radius: 12px;
-  text-align: center;
-  border-bottom: 5px double #d8be8b;
-  margin-bottom: 50px;
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
-
 .container-contacto{
   display: flex;
   justify-content: center;

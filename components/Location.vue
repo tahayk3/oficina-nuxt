@@ -82,16 +82,15 @@ const currentOffice = computed(() => offices[tab.value])
   padding: 0rem;
   margin: 0rem;
   text-align: center;
-
 }
 
 .title {
+  width: 100%;
   color: #d8be8b;
-  font-size: 2.0rem;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   border-radius: 12px;
-  text-align: center;
-  border-bottom: 5px double #d8be8b;
+  text-align: left;
+  font-size: 2.5rem;
 }
 
 .description {
@@ -100,9 +99,6 @@ const currentOffice = computed(() => offices[tab.value])
   font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
-
-  
 }
 
 .map-wrapper{
