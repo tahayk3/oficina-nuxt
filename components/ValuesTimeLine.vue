@@ -2,7 +2,7 @@
   <h2 class="title">
     Nuestros Valores
   </h2>
-  <v-timeline align="start">
+  <v-timeline align="start"  class="linea-tiempo">
     <v-timeline-item
       v-for="(valor, i) in valores"
       :key="i"
@@ -73,11 +73,16 @@ const valores = [
   margin-bottom: 30px;
 }
 
+.linea-tiempo{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .valor-titulo {
   display: flex;
   align-items: center;
   color: #d8b58b;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .valor-subtitulo {
@@ -85,15 +90,39 @@ const valores = [
   margin-bottom: 1.5rem;
   font-weight: 300;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .valor-descripcion {
   color: #000000;
   font-size: 1.2rem;
+
 }
 
 .valor-icon{
   color: #2f70bf;
+}
+
+@media (max-width: 600px) {
+  .linea-tiempo{
+    padding: 0%;
+    margin: 0%;
+  }
+  .valor-titulo {
+    font-size: 1.2rem;
+    padding: 0%;
+    margin: 0%;
+  }
+  .valor-subtitulo {
+    font-size: 1.2rem;
+    padding: 0%;
+    margin: 0%;
+  }
+  .valor-descripcion {
+    font-size: 1rem;
+    padding: 0%;
+    margin: 0%;
+  }
 }
 </style>

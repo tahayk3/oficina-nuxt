@@ -47,6 +47,10 @@
       <Location />
     </section>
 
+    <section id="ubicacion">
+      <FrequentlyAskedQuestions />
+    </section>
+
     <!-- formulario de contacto -->
     <section id="contacto" style="margin-top: 1.5rem; margin-bottom: 5rem;">
       <ContactForm />
@@ -64,4 +68,5 @@ import ServicesCard from '~/components/ServicesCard.vue'
 import Location from '~/components/Location.vue'
 import ContactForm from '~/components/ContactForm.vue'
 import ValuesTimeLine from '~/components/ValuesTimeLine.vue'
+import FrequentlyAskedQuestions from '~/components/FrequentlyAskedQuestions.vue'
 </script>
