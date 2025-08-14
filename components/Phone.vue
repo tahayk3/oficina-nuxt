@@ -67,18 +67,24 @@
       <v-divider inset></v-divider>
 
       <!-- Email -->
-      <v-list-item>
+      <v-list-item
+        :href="'mailto:lawfirmalegalqt@gmail.com?subject=' + encodeURIComponent('Consulta Legal') + '&body=' + encodeURIComponent('Hola, quisiera más información.')"
+        target="_blank"
+      >
         <template v-slot:prepend>
           <v-avatar>
             <v-icon color="#d8be8b" icon="mdi-email"></v-icon>
           </v-avatar>
         </template>
 
-        <v-list-item-title style="font-size: 25px;">lawfirmalegalqt@gmail.com</v-list-item-title>
+        <v-list-item-title style="font-size: 20px;">
+          lawfirmalegalqt@gmail.com
+        </v-list-item-title>
         <v-list-item-subtitle style="color: #5e2129; font-size: 15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
           LAW - Firma legal CORREO ELECTRONICO
         </v-list-item-subtitle>
       </v-list-item>
+
     </v-list>
   </v-card>
 </template>
