@@ -57,6 +57,15 @@
         <!-- reCAPTCHA -->
         <div data-netlify-recaptcha="true"></div>
 
+        <!-- Aceptación de Política -->
+        <div class="brutalist-container">
+          <label>
+            <input type="checkbox" v-model="form.privacidad" required />
+            He leído y acepto la 
+            <NuxtLink to="/politica-privacidad" target="_blank">Política de Privacidad</NuxtLink>
+          </label>
+        </div>
+
         <!-- Botón -->
         <button class="xd" type="submit">
           <a><span>Enviar</span></a> 
@@ -83,7 +92,8 @@ const toast = useToast()
 const form = ref({
   name: '',
   email: '',
-  message: ''
+  message: '',
+  privacidad: false
 })
 
 const sending = ref(false)
