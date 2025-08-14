@@ -30,37 +30,32 @@
 <script setup>
 const valores = [
   {
-    color: '#d8be8b', // dorado
-    titulo: 'Confidencialidad',
-    subtitulo: 'Protección de la información',
+    color: '#5e2129', 
+    subtitulo: 'Confidencialidad: Protección de la información',
     descripcion: 'Respetamos y protegemos la información de nuestros clientes en todo momento.',
     icon: 'mdi-shield-account',
   },
   {
-    color: '#121f2f', // azul oscuro
-    titulo: 'Integridad',
-    subtitulo: 'Actuar siempre con honestidad',
+    color: '#d8be8b',
+    subtitulo: 'Integridad: Actuar siempre con honestidad',
     descripcion: 'Mantenemos los más altos estándares éticos, ofreciendo asesoría transparente y confiable a nuestros clientes.',
     icon: 'mdi-scale-balance',
   },
   {
-    color: '#d8be8b',
-    titulo: 'Compromiso',
-    subtitulo: 'Defender los intereses de nuestros clientes',
+    color: '#5e2129',
+    subtitulo: 'Compromiso: Defender los intereses de nuestros clientes',
     descripcion: 'Nos dedicamos plenamente a cada caso, buscando siempre la mejor solución legal para nuestros clientes.',
     icon: 'mdi-gavel',
   },
   {
-    color: '#121f2f',
-    titulo: 'Excelencia',
-    subtitulo: 'Trabajo de calidad y resultados',
+    color: '#d8be8b',
+    subtitulo: 'Excelencia: Trabajo de calidad y resultados',
     descripcion: 'Brindamos un servicio jurídico de primer nivel, respaldado por experiencia y formación continua.',
     icon: 'mdi-trophy-outline',
   },
   {
-    color: '#d8be8b',
-    titulo: 'Empatía',
-    subtitulo: 'Escuchar y comprender',
+    color: '#5e2129',
+    subtitulo: 'Empatía: Escuchar y comprender',
     descripcion: 'Nos ponemos en el lugar de nuestros clientes para entender sus necesidades y ofrecer un trato cercano.',
     icon: 'mdi-handshake',
   },
@@ -87,16 +82,18 @@ const valores = [
 
 .valor-subtitulo {
   margin-top: -0.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 300;
-  color: #2f70bf;
+  color: #000000;
+  font-size: 1.5rem;
 }
 
 .valor-descripcion {
   color: #000000;
+  font-size: 1.2rem;
 }
 
 .valor-icon{
-  color: #d8b58b;
+  color: #2f70bf;
 }
 </style>

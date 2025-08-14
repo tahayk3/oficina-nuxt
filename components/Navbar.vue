@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="nav-container">
-      <div class="brand">LAW – Firma Legal</div>
+      <div class="brand">LAW – FIRMA LEGAL</div>
       
       <button
         class="hamburger"

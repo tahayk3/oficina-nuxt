@@ -26,8 +26,8 @@
           </v-avatar>
         </template>
 
-        <v-list-item-title style="font-size: 25px;">+ (502) 1234-5678</v-list-item-title>
-        <v-list-item-subtitle style="color: #000; font-size: 15px;">LAW - Firma legal TELEFONO</v-list-item-subtitle>
+        <v-list-item-title style="font-size: 25px;">+ (502) 5113-8570</v-list-item-title>
+        <v-list-item-subtitle style="color: red; font-size: 15px;">LAW - Firma legal TELEFONO</v-list-item-subtitle>
       </v-list-item>
 
       <v-list-item>
@@ -35,8 +35,8 @@
           <v-avatar></v-avatar>
         </template>
 
-        <v-list-item-title style="font-size: 25px;">+ (502) 1234-5678</v-list-item-title>
-        <v-list-item-subtitle style="color: #000; font-size: 15px;">LAW - Firma legal TELEFONO</v-list-item-subtitle>
+        <v-list-item-title style="font-size: 25px;">+ (502) 3338 4962</v-list-item-title>
+        <v-list-item-subtitle style="color: red; font-size: 15px;">LAW - Firma legal TELEFONO</v-list-item-subtitle>
 
       </v-list-item>
 
@@ -49,8 +49,8 @@
           </v-avatar>
         </template>
 
-        <v-list-item-title style="font-size: 25px;">lawfirmalegal@gmail.com</v-list-item-title>
-        <v-list-item-subtitle style="color: #000; font-size: 15px;">LAW - Firma legal CORREO ELECTRONICO</v-list-item-subtitle>
+        <v-list-item-title style="font-size: 25px;">lawfirmalegalqt@gmail.com</v-list-item-title>
+        <v-list-item-subtitle style="color: red; font-size: 15px;">LAW - Firma legal CORREO ELECTRONICO</v-list-item-subtitle>
       </v-list-item>
 
     </v-list>

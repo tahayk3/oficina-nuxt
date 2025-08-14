@@ -18,7 +18,7 @@ const currentIndex = shallowRef(0)
         v-model="currentIndex"
         direction="vertical"
         height="600"
-        progress="red"
+        progress="#121f2f"
         vertical-arrows="left"
         vertical-delimiters="right"
         hide-delimiter-background

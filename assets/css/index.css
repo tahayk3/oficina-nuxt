@@ -18,6 +18,19 @@
   border-radius: 15px;
 }
 
+.right .index-title{
+  color: #bf0019;
+  padding-left: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.right .index-description{
+  border-radius: 15px;
+  padding: 50px 50px 0px 50px;
+  color: bf0019;
+}
+
+
 .text-section h1{
   font-size: 3rem;
 }
@@ -31,7 +44,7 @@
 .index-description a{
   color: #000000;
   text-decoration: underline;
-  text-decoration-color: #d8be8b;
+  text-decoration-color: #bf0019;
   text-decoration-thickness: 3px;
 }
 
