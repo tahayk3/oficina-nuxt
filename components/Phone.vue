@@ -2,7 +2,7 @@
   <v-card class="mx-auto" max-width="375">
     <v-img
       class="text-white"
-      height="260px"
+      height="300px"
       src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Fphone.png?alt=media&token=f352b8e3-0085-4d5f-9a2f-274d6d587c66"
       cover
     >
@@ -25,7 +25,7 @@
         </template>
 
         <v-list-item-title style="font-size: 25px;">+ (502) 5113-8570</v-list-item-title>
-        <v-list-item-subtitle style="color: red; font-size: 15px;">
+        <v-list-item-subtitle style="color: #5e2129; font-size: 15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
           LAW - Firma legal TELEFONO
         </v-list-item-subtitle>
 
@@ -48,7 +48,7 @@
         </template>
 
         <v-list-item-title style="font-size: 25px;">+ (502) 3338 4962</v-list-item-title>
-        <v-list-item-subtitle style="color: red; font-size: 15px;">
+        <v-list-item-subtitle style="color: #5e2129; font-size: 15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
           LAW - Firma legal TELEFONO
         </v-list-item-subtitle>
 
@@ -75,7 +75,7 @@
         </template>
 
         <v-list-item-title style="font-size: 25px;">lawfirmalegalqt@gmail.com</v-list-item-title>
-        <v-list-item-subtitle style="color: red; font-size: 15px;">
+        <v-list-item-subtitle style="color: #5e2129; font-size: 15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
           LAW - Firma legal CORREO ELECTRONICO
         </v-list-item-subtitle>
       </v-list-item>
