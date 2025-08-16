@@ -90,7 +90,7 @@ const valores = [
   margin-bottom: 1.5rem;
   font-weight: 300;
   color: #000000;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 

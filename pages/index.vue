@@ -1,11 +1,11 @@
 <template>
   <main class="main-index">
-      <h1 class="title-h1">LAW – Firma Legal Quetzaltenango</h1>
+      <h1 class="title-h1" data-aos="fade-down">LAW – Firma Legal Quetzaltenango</h1>
 
       <div class="layout">
         <!-- Bloque de información izquierda -->
         <div class="info-section">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <h2>¿Quiénes somos?</h2>
             <p>
               Especializados en derecho familiar, notarial, mercantil, penal y civil.  
@@ -14,7 +14,7 @@
             </p>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
             <h2>¿Cómo podemos ayudarte?</h2>
             <p>
               Llena este <a href="#contacto">formulario</a> para contactar con nosotros.  
@@ -22,7 +22,7 @@
             </p>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
             <h2>Por qué elegirnos</h2>
             <p>
               ✅ Más de 10 años de experiencia en distintas ramas del derecho. <br>
@@ -34,35 +34,32 @@
         </div>
 
         <!-- Modelo 3D derecha -->
-        <div class="modelo3d">
+        <div class="modelo3d" data-aos="zoom-in-left">
           <ThreeDBox />
         </div>
       </div>
 
 
-      
+<section id="ubicacion" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">
+  <Location />
+</section>
 
+<section data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+  <ServicesCard />
+</section>
 
-    <section id="ubicacion">
-      <Location />
-    </section>
+<section id="valores" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+  <ValuesTimeLine />
+</section>
 
-    <section id="">
-      <ServicesCard />
-    </section>
+<section id="faq" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">
+  <FrequentlyAskedQuestions />
+</section>
 
-    <section id="valores">
-      <ValuesTimeLine />
-    </section>
+<section id="contacto" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" style="margin-top: 5rem; margin-bottom: 5rem;">
+  <ContactForm />
+</section>
 
-    <section id="ubicacion">
-      <FrequentlyAskedQuestions />
-    </section>
-
-    <!-- formulario de contacto -->
-    <section id="contacto" style="margin-top: 1.5rem; margin-bottom: 5rem;">
-      <ContactForm />
-    </section>
   </main>
 </template>
 
