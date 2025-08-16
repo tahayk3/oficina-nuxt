@@ -104,7 +104,7 @@ const valores = [
   color: #2f70bf;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 
   .title {
     width: 100%;

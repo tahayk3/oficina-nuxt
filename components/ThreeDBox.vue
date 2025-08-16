@@ -128,7 +128,7 @@ onMounted(async () => {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .canvas-container {
     height: 400px;
     pointer-events: none;

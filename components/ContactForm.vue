@@ -432,7 +432,7 @@ button a span {
 
 /* VISTA MOVIL */
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
  .container-contacto{
   display: flex; /* para usar flex-direction */
   flex-direction: column-reverse; /* aquí ocurre la magia */

@@ -128,7 +128,7 @@ const currentOffice = computed(() => offices[tab.value])
   font-size:15px !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .map-wrapper {
     flex-direction: column;
   }

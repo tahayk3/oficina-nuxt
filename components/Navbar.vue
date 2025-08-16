@@ -114,7 +114,7 @@ const items = [
 
 /* Responsive - Mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .hamburger {
     display: flex;
   }

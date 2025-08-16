@@ -5,6 +5,7 @@
   gap: 2rem;
   position: relative;
   padding: 0rem;
+  margin-bottom: 2rem;
 }
 
 .title-h1 {
@@ -66,7 +67,7 @@
 }
 
 /* 📱 Teléfonos y pantallas pequeñas */
-@media (max-width: 900px) {
+@media (max-width: 110px) {
   .layout {
     flex-direction: column; /* Cambia a vertical */
     height: 10%;
