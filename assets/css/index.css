@@ -3,6 +3,7 @@
   display: flex;
   height: 70vh;
   gap: 2rem;
+  position: relative;
 }
 
 .title-h1 {
@@ -63,84 +64,13 @@
   border: 1px solid #d8be8b;
 }
 
-
-
-/* animacion fondo emojis */
-.emoji-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.floating-icon {
-  position: absolute;
-  font-size: 2rem;
-  opacity: 0.05;
-  color: #a60000;
-  animation: floatUp 15s linear infinite;
-}
-
-/* Posiciones y delays distintas */
-.floating-icon:nth-child(1) { left: 10%; animation-delay: 0s; }
-.floating-icon:nth-child(2) { left: 30%; animation-delay: 2s; }
-.floating-icon:nth-child(3) { left: 50%; animation-delay: 4s; }
-.floating-icon:nth-child(4) { left: 70%; animation-delay: 1s; }
-.floating-icon:nth-child(5) { left: 85%; animation-delay: 3s; }
-.floating-icon:nth-child(6) { left: 95%; animation-delay: 5s; }
-
-@keyframes floatUp {
-  0% {
-    top: 100%;
-    transform: translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.08;
-  }
-  100% {
-    top: -10%;
-    transform: translateY(-100%) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-
-
-
-/* Coloca emojis en posiciones aleatorias */
-.emoji-background span:nth-child(1) { left: 10%; animation-delay: 0s; }
-.emoji-background span:nth-child(2) { left: 30%; animation-delay: 2s; }
-.emoji-background span:nth-child(3) { left: 50%; animation-delay: 4s; }
-.emoji-background span:nth-child(4) { left: 70%; animation-delay: 1s; }
-.emoji-background span:nth-child(5) { left: 85%; animation-delay: 3s; }
-.emoji-background span:nth-child(6) { left: 95%; animation-delay: 5s; }
-
-@keyframes floatUp {
-  0% {
-    top: 100%;
-    transform: translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    top: -10%;
-    transform: translateY(-100%) rotate(360deg);
-    opacity: 0;
-  }
-}
-
 /* 📱 Teléfonos y pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .layout {
     flex-direction: column; /* Cambia a vertical */
     height: 10%;
+    padding: 0;
+    margin: 10px;
   }
 
   .text-section {

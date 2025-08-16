@@ -151,4 +151,16 @@ function toggle(index) {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+
+/* VISTA MOVIL */
+
+@media (max-width: 900px) {
+.faq-section {
+  max-width: 95%;
+  margin: auto;
+  padding: 0px 20px;
+}
+}
+
 </style>

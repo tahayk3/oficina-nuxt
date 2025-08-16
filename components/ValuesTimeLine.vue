@@ -104,7 +104,17 @@ const valores = [
   color: #2f70bf;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+
+  .title {
+    width: 100%;
+    color: #d8b58b;
+    padding: 0rem 2rem;
+    border-radius: 0px;
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
   .linea-tiempo{
     padding: 0%;
     margin: 0%;

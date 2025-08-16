@@ -23,7 +23,7 @@
           </div>
 
           <div class="card" data-aos="fade-up" data-aos-delay="400">
-            <h2>Por qué elegirnos</h2>
+            <h2>¿Por qué elegirnos?</h2>
             <p>
               ✅ Más de 10 años de experiencia en distintas ramas del derecho. <br>
               ✅ Atención personalizada y trato cercano. <br>
@@ -40,23 +40,23 @@
       </div>
 
 
-<section id="ubicacion" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">
+<section id="ubicacion" data-aos="fade-up" data-aos-delay="200" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'">
   <Location />
 </section>
 
-<section data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+<section data-aos="fade-up" data-aos-delay="200" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'">
   <ServicesCard />
 </section>
 
-<section id="valores" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+<section id="valores" data-aos="fade-up" data-aos-delay="200" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'">
   <ValuesTimeLine />
 </section>
 
-<section id="faq" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">
+<section id="faq" data-aos="fade-up" data-aos-delay="200" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'">
   <FrequentlyAskedQuestions />
 </section>
 
-<section id="contacto" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" style="margin-top: 5rem; margin-bottom: 5rem;">
+<section id="contacto" data-aos="fade-up" data-aos-delay="200" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'" >
   <ContactForm />
 </section>
 
@@ -74,4 +74,11 @@ import Location from '~/components/Location.vue'
 import ContactForm from '~/components/ContactForm.vue'
 import ValuesTimeLine from '~/components/ValuesTimeLine.vue'
 import FrequentlyAskedQuestions from '~/components/FrequentlyAskedQuestions.vue'
+
+const isMobile = ref(false)
+
+onMounted(() => {
+  isMobile.value = window.innerWidth < 900
+})
+
 </script>

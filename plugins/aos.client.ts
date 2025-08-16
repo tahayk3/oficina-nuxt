@@ -3,11 +3,12 @@ import 'aos/dist/aos.css'
 
 export default defineNuxtPlugin(() => {
   if (process.client) {
+    const isMobile = window.innerWidth < 900
     AOS.init({
-      duration: 600,   // duración de animación
+      duration: 900,   // duración de animación
       once: true,      // solo una vez
       easing: 'ease-in-out',
-      offset: 0       // distancia de scroll antes de activar
+       offset: isMobile ? 50 : 150
     })
   }
 })

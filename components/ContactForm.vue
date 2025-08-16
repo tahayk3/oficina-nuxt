@@ -448,6 +448,11 @@ button a span {
 .container-phone{
   width: 100%;
 }
+
+
+.title {
+  margin-bottom: 0px;
+}
 }
 
 </style>
