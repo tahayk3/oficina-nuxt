@@ -158,6 +158,7 @@ async function handleSubmit(e) {
   margin-bottom: 30px;
 }
 .container-contacto{
+    padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
