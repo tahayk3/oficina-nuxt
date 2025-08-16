@@ -83,7 +83,7 @@ const currentOffice = computed(() => offices[tab.value])
  /* Estilos */
 .location-section {
   text-align: center;
-  padding: 2rem;
+  padding-top: 4rem;
 }
 
 .title {
