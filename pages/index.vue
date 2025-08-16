@@ -1,39 +1,51 @@
 <template>
   <main class="main-index">
+      <h1 class="title-h1">LAW – Firma Legal Quetzaltenango</h1>
 
-    <div class="layout">
-      <div class="emoji-background">
-      <v-icon icon="mdi-scale-balance" class="floating-icon"></v-icon>
-      <v-icon icon="mdi-file-document-outline" class="floating-icon"></v-icon>
-      <v-icon icon="mdi-bank" class="floating-icon"></v-icon>
-      <v-icon icon="mdi-book-open-page-variant" class="floating-icon"></v-icon>
-      <v-icon icon="mdi-pencil" class="floating-icon"></v-icon>
-      <v-icon icon="mdi-file-sign" class="floating-icon"></v-icon>
-    </div>
-      <!-- Texto a la izquierda (30%) -->
-      <div class="text-section left">
-        <h1 class="index-title">Bienvenidos a <br> LAW – Firma Legal en Quetzaltenango</h1>
-        <p class="index-description">
-          Especializados en derecho familiar, notarial, mercantil, penal y civil.
-          Nuestra firma legal brinda asesoría especializada en Derecho Civil, orientada a resolver de forma eficaz y personalizada los asuntos legales de nuestros clientes.
-          Con una trayectoria sólida y un compromiso firme con la ética profesional, ofrecemos un servicio cercano, confiable y adaptado a cada caso.
-        </p>
+      <div class="layout">
+        <!-- Bloque de información izquierda -->
+        <div class="info-section">
+          <div class="card">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+              Especializados en derecho familiar, notarial, mercantil, penal y civil.  
+              Nuestra firma legal brinda asesoría especializada en Derecho Civil, orientada a resolver de forma eficaz y personalizada los asuntos legales de nuestros clientes.  
+              Con una trayectoria sólida y un compromiso firme con la ética profesional, ofrecemos un servicio cercano, confiable y adaptado a cada caso.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>¿Cómo podemos ayudarte?</h2>
+            <p>
+              Llena este <a href="#contacto">formulario</a> para contactar con nosotros.  
+              También puedes visitar nuestras oficinas. Consulta la sección de <a href="#ubicacion">ubicación</a> para más información.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Por qué elegirnos</h2>
+            <p>
+              ✅ Más de 10 años de experiencia en distintas ramas del derecho. <br>
+              ✅ Atención personalizada y trato cercano. <br>
+              ✅ Compromiso con la ética y la transparencia. <br>
+              ✅ Soluciones jurídicas eficaces y adaptadas a cada cliente.
+            </p>
+          </div>
+        </div>
+
+        <!-- Modelo 3D derecha -->
+        <div class="modelo3d">
+          <ThreeDBox />
+        </div>
       </div>
 
-      <!-- Modelo 3D al centro (40%) -->
-      <div class="model-section">
-        <ThreeDBox />
-      </div>
 
-      <!-- Texto a la derecha (30%) -->
-      <div class="text-section right">
-        <h2 class="index-title">¿Cómo podemos ayudarte?</h2>
-        <p class="index-description">
-          Rellena este <a href="#contacto">formulario</a> para contactar con nosotros. Te responderemos lo antes posible.
-          También puedes contactar directamente en nuestras oficinas. Consulta la sección de <a href="#ubicacion">ubicación</a> para más información.
-        </p>
-      </div>
-    </div>
+      
+
+
+    <section id="ubicacion">
+      <Location />
+    </section>
 
     <section id="">
       <ServicesCard />
@@ -41,10 +53,6 @@
 
     <section id="valores">
       <ValuesTimeLine />
-    </section>
-
-    <section id="ubicacion">
-      <Location />
     </section>
 
     <section id="ubicacion">

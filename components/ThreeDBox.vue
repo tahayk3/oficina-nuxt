@@ -60,9 +60,17 @@ onMounted(async () => {
   controls.minPolarAngle = Math.PI / 2
   controls.maxPolarAngle = Math.PI / 2
 
+  // Fijamos el target en el origen
+  controls.target.set(0, 0, 0)
+  controls.update()
+
   scene.add(new THREE.HemisphereLight(0xffffff, 0x444444))
   scene.add(new THREE.DirectionalLight(0xffffff, 1))
   scene.add(new THREE.AmbientLight(0xffffff, 2.5))
+
+  //LUCES
+  scene.add(new THREE.AmbientLight(0xffffff, 1.5))
+
 
   const pmremGenerator = new PMREMGenerator(renderer)
   pmremGenerator.compileEquirectangularShader()
@@ -76,26 +84,30 @@ onMounted(async () => {
     }
   )
 
-  let model = null
-  new GLTFLoader(manager).load(
-    'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F02.glb?alt=media&token=6e9ab8ea-adac-40c5-8768-5c9e4fc2b388',
-    (gltf) => {
-      model = gltf.scene
-      model.scale.set(3.1 ,3.1 ,3.1)
+  let modelGroup = new THREE.Group()
+  scene.add(modelGroup)
 
-      // Centrar el modelo en el mundo
+
+  new GLTFLoader(manager).load(
+    'https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2F03.glb?alt=media&token=885ab06a-2914-4522-98ae-c38183924c54',
+    (gltf) => {
+      const model = gltf.scene
+      model.scale.set(4.1,4.1,4.1)
+
+      // Centrar el modelo dentro del grupo
       const box = new THREE.Box3().setFromObject(model)
       const center = new THREE.Vector3()
       box.getCenter(center)
       model.position.sub(center)
 
-      scene.add(model)
+      modelGroup.add(model)
     }
   )
 
   const animate = () => {
     requestAnimationFrame(animate)
-    if (model) model.rotation.y += 0.001
+    // Rotación suave del grupo
+    modelGroup.rotation.y += 0.001
     controls.update()
     renderer.render(scene, camera)
   }
@@ -107,7 +119,7 @@ onMounted(async () => {
 .model-wrapper {
   position: relative;
   width: 100%;
-  height: 900px; /* altura deseada */
+  height: 700px; /* altura deseada */
   overflow: visible;
 }
 
@@ -116,13 +128,12 @@ onMounted(async () => {
   height: 100%;
 }
 
-
 @media (max-width: 768px) {
-  .canvas-container  {
+  .canvas-container {
     height: 400px;
     pointer-events: none;
   }
-  .model-wrapper{
+  .model-wrapper {
     height: 400px;
   }
 }
@@ -138,3 +149,5 @@ onMounted(async () => {
   z-index: 10;
 }
 </style>
+
+
