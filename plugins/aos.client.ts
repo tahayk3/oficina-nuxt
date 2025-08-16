@@ -8,7 +8,7 @@ export default defineNuxtPlugin(() => {
       duration: 900,   // duración de animación
       once: true,      // solo una vez
       easing: 'ease-in-out',
-       offset: isMobile ? 1 : 150
+       offset: isMobile ? 15 : 150
     })
   }
 })
