@@ -5,7 +5,7 @@
       <div class="layout">
         <!-- Bloque de información izquierda -->
         <div class="info-section">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
             <h2>¿Quiénes somos?</h2>
             <p>
               Especializados en derecho familiar, notarial, mercantil, penal y civil.  
@@ -14,7 +14,7 @@
             </p>
           </div>
 
-          <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card" data-aos="fade-up" data-aos-delay="800">
             <h2>¿Cómo podemos ayudarte?</h2>
             <p>
               Llena este <a href="#contacto">formulario</a> para contactar con nosotros.  
@@ -22,7 +22,7 @@
             </p>
           </div>
 
-          <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card" data-aos="fade-up" data-aos-delay="1200">
             <h2>¿Por qué elegirnos?</h2>
             <p>
               ✅ Más de 10 años de experiencia en distintas ramas del derecho. <br>

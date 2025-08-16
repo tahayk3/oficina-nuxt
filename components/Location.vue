@@ -93,7 +93,7 @@ const currentOffice = computed(() => offices[tab.value])
   border-radius: 12px;
   text-align: left;
   font-size: 2.5rem;
-  margin-top: 250px;
+  margin-top: 10px;
 }
 
 .description {
