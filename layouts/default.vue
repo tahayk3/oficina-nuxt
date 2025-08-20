@@ -16,25 +16,26 @@ import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 
 // SEO optimizado con branding LAW
+
 useHead({
-  title: 'LAW – Firma Legal en Quetzaltenango',
-  titleTemplate: '%s | Abogados en Quetzaltenango – Derecho Civil y Familiar',
+  title: 'LAW – Abogados y Firma Legal en Quetzaltenango',
+  titleTemplate: '%s | Abogados en Quetzaltenango – Derecho Civil, Familiar, Laboral y Mercantil',
   meta: [
     {
       name: 'description',
-      content: 'LAW es una firma legal en Quetzaltenango especializada en derecho civil, familiar, laboral y corporativo. Abogados con experiencia y compromiso con la comunidad quetzalteca.'
+      content: 'LAW – Abogados y Firma Legal en Quetzaltenango, especializada en derecho civil, familiar, laboral, penal y mercantil. Brindamos asesoría legal confiable y personalizada a clientes en Quetzaltenango y Guatemala, incluyendo servicios de bufete jurídico, consultoría legal y notaría.'
     },
     {
       property: 'og:title',
-      content: 'LAW – Abogados en Quetzaltenango'
+      content: 'LAW – Abogados y Firma Legal en Quetzaltenango'
     },
     {
       property: 'og:description',
-      content: 'LAW, su firma legal en Quetzaltenango para derecho civil, familiar, laboral y corporativo. Abogados comprometidos con la defensa de sus derechos.'
+      content: 'LAW – Abogados y Firma Legal en Quetzaltenango. Especialistas en derecho civil, familiar, laboral, penal y mercantil. Brindamos asesoría legal confiable y personalizada para clientes y empresas en Quetzaltenango y Guatemala.'
     },
     {
       name: 'keywords',
-      content: 'abogados Quetzaltenango, firma legal Quetzaltenango, derecho civil, derecho familiar, derecho penal, derecho mercantil, derecho notarial, solución de conflictos, jurisdicción voluntaria, abogados Guatemala, abogados para guatemaltecos en el extranjero'
+      content: 'firma legal Quetzaltenango, abogados Quetzaltenango, bufete jurídico Quetzaltenango, abogado familiar Xela, abogado penal Quetzaltenango, derecho civil, derecho familiar, derecho penal, derecho mercantil, notario público Quetzaltenango, abogados Guatemala, abogados para guatemaltecos en el extranjero, consultas legales en línea Quetzaltenango'
     },
     {
       property: 'og:type',
@@ -50,7 +51,7 @@ useHead({
     },
     {
       property: 'og:site_name',
-      content: 'LAW – Firma Legal Quetzaltenango'
+      content: 'LAW – Abogados y Firma Legal en Quetzaltenango'
     }
   ],
   link: [
@@ -61,4 +62,5 @@ useHead({
     }
   ]
 })
+
 </script>
