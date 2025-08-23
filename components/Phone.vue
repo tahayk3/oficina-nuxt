@@ -4,7 +4,7 @@
       class="text-white"
       height="300px"
       loading="lazy"
-      src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Fphone.png?alt=media&token=f352b8e3-0085-4d5f-9a2f-274d6d587c66"
+      src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Fphone%20(1).webp?alt=media&token=c257f5e6-9236-4d52-8353-7467e5c232fa"
       cover
     >
       <div class="d-flex flex-column h-100">
