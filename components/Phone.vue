@@ -4,6 +4,7 @@
       class="text-white"
       height="300px"
       loading="lazy"
+      alt ="Imagen que muestra un telefono con colores azul y dorado"
       src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2Fphone%20(1).webp?alt=media&token=c257f5e6-9236-4d52-8353-7467e5c232fa"
       cover
     >
