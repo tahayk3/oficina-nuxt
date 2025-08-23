@@ -13,7 +13,6 @@ export default defineEventHandler((event) => {
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
-  
     <url>
       <loc>https://law-firma-legal-quetzaltenango.netlify.app/equipo</loc>
       <changefreq>monthly</changefreq>
@@ -23,6 +22,18 @@ export default defineEventHandler((event) => {
       <loc>https://law-firma-legal-quetzaltenango.netlify.app/contacto</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
+    </url>
+
+    <url>
+      <loc>https://law-firma-legal-quetzaltenango.netlify.app/articulos/divorcio-quetzaltenango</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+    </url>
+
+    <url>
+      <loc>https://law-firma-legal-quetzaltenango.netlify.app/articulos/pensiones-alimenticias-quetzaltenango</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
     </url>
   </urlset>`
 })
