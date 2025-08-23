@@ -32,9 +32,9 @@ const drawer = ref(false)
 
 const items = [
   { title: 'Inicio', value: 'home', to: '/' },
-  { title: 'Nuestro equipo', value: 'about', to: '/equipo' },
   { title: 'Contacto', value: 'contact', to: '/contacto' },
-  { title: 'Servicios', value: 'services', to: '/servicios' }
+  { title: 'Servicios', value: 'services', to: '/servicios' },
+  { title: 'Articulos', value: 'about', to: '/articulos' },
 ]
 </script>
 
