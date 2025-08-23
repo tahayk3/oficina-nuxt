@@ -1,4 +1,5 @@
 import vuetify from 'vite-plugin-vuetify'
+import { allArticles } from './data/articlesData.js'
 
 export default defineNuxtConfig({
   ssr: true,
@@ -15,7 +16,19 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'netlify',
     prerender: {
-      routes: ['/', '/servicios', '/contacto', '/articulos']
+      // rutas estáticas
+      routes: [
+        '/',
+        '/servicios',
+        '/contacto',
+        '/faq',
+        '/politica-privacidad',
+        '/articulos',
+        // rutas de artículos dinámicas
+        ...allArticles.map(a => `/articulos/${a.slug}`),
+        // sitemap estático
+        '/sitemap.xml'
+      ]
     }
   },
   modules: [
