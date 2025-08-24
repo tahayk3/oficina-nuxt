@@ -4,6 +4,7 @@
     <v-parallax
       src="https://firebasestorage.googleapis.com/v0/b/mueblesxela-d948d.appspot.com/o/oficina-k%2FGemini_Generated_Image_vnn3movnn3movnn3%20(1).webp?alt=media&token=61f56622-ae93-498d-92e0-d499ba68fc70"
       height="auto"
+      alt="Página que muestra abogados con elementos característicos de Guatemala"
     >
       <v-container class="fill-height d-flex flex-column justify-center align-start text-left">
         
