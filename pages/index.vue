@@ -1,8 +1,12 @@
 <template>
   <main class="main-index">
-      <h1 class="title-h1" data-aos="fade-down">LAW – Firma Legal Quetzaltenango</h1>
+      
+      <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'">
+        <Parallax />
+      </section>
 
-      <div class="layout">
+
+      <div class="layout" data-aos="fade-up" data-aos-delay="200" :data-aos-anchor-placement="isMobile ? 'top-bottom' : 'center-bottom'">
         <!-- Bloque de información izquierda -->
         <div class="info-section">
           <div class="card" data-aos="fade-up" data-aos-delay="400">
@@ -74,6 +78,8 @@ import Location from '~/components/Location.vue'
 import ContactForm from '~/components/ContactForm.vue'
 import ValuesTimeLine from '~/components/ValuesTimeLine.vue'
 import FrequentlyAskedQuestions from '~/components/FrequentlyAskedQuestions.vue'
+import ParalentlyAskedQuestions from '~/components/FrequentlyAskedQuestions.vue'
+import Parallax from '~/components/Parallax.vue'
 
 const isMobile = ref(false)
 

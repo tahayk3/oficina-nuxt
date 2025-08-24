@@ -1,6 +1,6 @@
 <template>
   <v-container class="articles-container">
-    <h2 class="title">Contacto con LAW firma legal</h2>
+    <h2 class="title">Articulos y consejos legales LAW FIRMA LEGAL</h2>
     <p class="articles-subtitle">
       Aquí encontrarás artículos, consejos y noticias legales para mantenerte informado y proteger tus derechos.
     </p>
