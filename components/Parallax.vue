@@ -16,7 +16,7 @@
           data-aos-delay="200"
           data-aos-anchor-placement="top-bottom"
         >
-          LAW – Firma Legal Quetzaltenango
+          LAW – Abogados y Firma Legal en Quetzaltenango
         </h1>
 
         <!-- Subtítulo animado -->
